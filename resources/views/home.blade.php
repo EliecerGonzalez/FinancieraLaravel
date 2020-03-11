@@ -2,39 +2,64 @@
 @section('css')
   <link rel="stylesheet" href="/css/home.css">
 @endsection
-@section('title')
-Home
-@endsection
+
 @section('main')
-<div class="banner">
-  <div class="banner-text">
-    <h2><b>Oferta!</b></h2>
-    <p>Haz click para saber más.</p>
-  </div>
-  <div class="banner-img">
-    <img src="/img/iphone.png" alt="iPhone 11 de Oferta">
-  </div>
-</div>
+  <body>
 
-<div class="ordenar">
-  <a href="lista">
-    <ion-icon name="list-box"></ion-icon>
-    <p>Ver en lista</p>
-  </a>
-</div>
+    <div class="container">
+      <div class="banner-img">
+        <script type="text/javascript">
+          var bannersnack_embed = {"hash":"b1u36pkz2","width":970,"height":250,"t":1583624784,"userId":40711500,"type":"html5"};
+        </script>
+        <script type="text/javascript" src="//cdn.bannersnack.com/iframe/embed.js"></script>
+      </div>
 
-<section class="productos">
+      <div class="articulos">
+        <div class="moto">
+          <img src="../../moto1.jpeg" alt="">
+          <h2>Motos</h2>
+        </div>
 
-@forelse ($productos as $producto)
-  <article class="producto">
-      <a href="/producto/{{$producto->id}}">
-        <img style="width: 100%; height: 300px;" src="/storage/productos/{{$producto->foto}}" alt="Macbook">
-        <p>{{$producto->titulo}}</p>
-        <p><b>{{$producto->precio}}$ ARS - {{$producto->stock}} disponibles</b></p>
-      </a>
-    </article>
-@empty
-  <h3>No hay productos actualmente disponibles, disculpe las molestias</h3>
-@endforelse
-</section>
+        <div class="efectivo">
+          <img src="moto2.jpeg" alt="">
+          <h2>Efectivo</h2>
+        </div>
+
+        <div class="equipo">
+          <img src="../../gas.jpeg" alt="">
+          <h2>Equipo de gas</h2>
+        </div>
+
+      </div>
+
+      <div class="contacto">
+
+        <h1 class="contactanos">Contactanos</h1>
+
+          <div class="whatsapp">
+
+            <a href="https://api.whatsapp.com/send?phone=5491166189733&amp;text=Hola%20Sigue%20disponible?%20" target="_blank" rel="noopener">
+            <img src="../../wapsa.jpg"
+            width="50px"
+            height="50px"
+            title="whatsapp">
+            </a>
+
+          </div>
+
+          <div class="gmail">
+
+            <a href="contacto">
+            <img src="../../gmail.png"
+            width="40px"
+            height="40px">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
 @endsection

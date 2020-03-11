@@ -1,77 +1,73 @@
 body {
   font-family: 'Open Sans';
-  background: #e3e3e3;
+  background-image: url('../fondo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding-top: 1em;
-}
-
-.banner {
-  background: linear-gradient(0deg, rgba(242,87,148,1) 1%, rgba(161,64,224,1) 100%);
-  width: 100%;
-  margin: 1.5em 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 300px;
-  margin-top: 1.6em;
-}
-
-.banner-text {
-  width: 45%;
-  color: white;
-  display: flex;
-  flex-direction: column;
 }
 
 .banner-img {
-  width: 45%;
+  display: flex;
+  justify-content: center;
 }
 
-.banner-img img {
-  width: 80%;
-  height: auto;
-}
-.ordenar {
-  width: 120px;
-  margin: 10px;
-  margin-left: 5%;
-  padding: 5px;
-  border: dotted 1px #f0f0f0;
-  border-radius: 10px;
-  background: #ededed;
-}
-.ordenar a{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.contacto{
   width: 100%;
-  margin-bottom: 2.5em;
+  margin-top: 55px;
 }
-
-.producto {
-  width: 48%;
-  padding: 8px;
-  margin: 1%;
+.contactanos {
   text-align: center;
-  border: solid #d4d4d4 1px;
-  background: white;
-  border-radius: 10px;
+  color: white;
+  }
+
+.whatsapp {
+  margin-left: 45%;
 }
 
-.producto img {
-  width: 100%;
-  max-width: 200px;
+.gmail {
+  margin-left: 50%; margin-top: -50px;
 }
+
+.moto {
+  margin-top: 200px;
+  margin-left: 95px;
+  display: inline-block;
+  vertical-align: middle;}
+
+.moto img {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;}
+
+.efectivo {
+  margin-top: 200px;
+  margin-left: 100px;
+  display: inline-block;
+  vertical-align: middle;}
+
+.efectivo img {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;}
+
+.equipo {
+  margin-top: 200px;
+  margin-left: 100px;
+  display: inline-block;
+  vertical-align: middle;}
+
+.equipo img {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;}
+
 
 @media (min-width: 768px) {
   .container{
